@@ -93,6 +93,7 @@ typedef NS_ENUM(int, AttackType){
 #pragma mark - 加载控件
 -(void)loadSubViews
 {
+    self.view.backgroundColor = [UIColor whiteColor];
     _bloodBGView = [[UIView alloc] initWithFrame:CGRectMake(20, 84, kDeviceWidth- 40, 20)];
     _bloodBGView.backgroundColor = [UIColor darkGrayColor];
     [self.view addSubview:_bloodBGView];

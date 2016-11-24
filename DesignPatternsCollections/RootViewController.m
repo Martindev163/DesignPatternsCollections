@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "RPGViewController.h"
+#import "TheFlowerbedsViewController.h"
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -32,7 +33,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 2;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -46,6 +47,10 @@
     if (indexPath.row == 0) {
         cell.textLabel.text = @"责任链模式";
     }
+    else if (indexPath.row == 1)
+    {
+        cell.textLabel.text = @"享元模式";
+    }
     return cell;
 }
 
@@ -56,6 +61,10 @@
     
     if (indexPath.row == 0) {
         RPGViewController *vc = [[RPGViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1)
+    {
+        TheFlowerbedsViewController *vc = [[TheFlowerbedsViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

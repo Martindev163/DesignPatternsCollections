@@ -25,6 +25,11 @@
 		234AF2311DE53AEB0085D8E4 /* RPGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF2301DE53AEB0085D8E4 /* RPGViewController.m */; };
 		234AF2341DE53C7A0085D8E4 /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF2331DE53C7A0085D8E4 /* LightningAttack.m */; };
 		234AF2381DE53E450085D8E4 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF2371DE53E450085D8E4 /* UIViewExt.m */; };
+		234AF23C1DE5992E0085D8E4 /* TheFlowerbedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF23B1DE5992E0085D8E4 /* TheFlowerbedsViewController.m */; };
+		236CEE3F1DE6996600FE84AF /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236CEE3E1DE6996600FE84AF /* FlowerView.m */; };
+		236CEE421DE699F200FE84AF /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 236CEE411DE699F200FE84AF /* FlowerFactory.m */; };
+		236CEE451DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 236CEE441DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.m */; };
+		236CEE481DE6CE0500FE84AF /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 236CEE471DE6CE0500FE84AF /* FlyweightView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,16 @@
 		234AF2331DE53C7A0085D8E4 /* LightningAttack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
 		234AF2361DE53E450085D8E4 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		234AF2371DE53E450085D8E4 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		234AF23A1DE5992E0085D8E4 /* TheFlowerbedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheFlowerbedsViewController.h; sourceTree = "<group>"; };
+		234AF23B1DE5992E0085D8E4 /* TheFlowerbedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheFlowerbedsViewController.m; sourceTree = "<group>"; };
+		236CEE3D1DE6996600FE84AF /* FlowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
+		236CEE3E1DE6996600FE84AF /* FlowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		236CEE401DE699F200FE84AF /* FlowerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
+		236CEE411DE699F200FE84AF /* FlowerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
+		236CEE431DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerStateModel.h; sourceTree = "<group>"; };
+		236CEE441DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtrinsicFlowerStateModel.m; sourceTree = "<group>"; };
+		236CEE461DE6CE0500FE84AF /* FlyweightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		236CEE471DE6CE0500FE84AF /* FlyweightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +200,7 @@
 		234AF2171DE530550085D8E4 /* DesignPatternsVC */ = {
 			isa = PBXGroup;
 			children = (
+				234AF2391DE592FC0085D8E4 /* 享元模式 */,
 				234AF2191DE5316A0085D8E4 /* 责任链模式 */,
 			);
 			path = DesignPatternsVC;
@@ -222,6 +238,23 @@
 				234AF2371DE53E450085D8E4 /* UIViewExt.m */,
 			);
 			path = Help;
+			sourceTree = "<group>";
+		};
+		234AF2391DE592FC0085D8E4 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				234AF23A1DE5992E0085D8E4 /* TheFlowerbedsViewController.h */,
+				234AF23B1DE5992E0085D8E4 /* TheFlowerbedsViewController.m */,
+				236CEE3D1DE6996600FE84AF /* FlowerView.h */,
+				236CEE3E1DE6996600FE84AF /* FlowerView.m */,
+				236CEE401DE699F200FE84AF /* FlowerFactory.h */,
+				236CEE411DE699F200FE84AF /* FlowerFactory.m */,
+				236CEE431DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.h */,
+				236CEE441DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.m */,
+				236CEE461DE6CE0500FE84AF /* FlyweightView.h */,
+				236CEE471DE6CE0500FE84AF /* FlyweightView.m */,
+			);
+			path = "享元模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,16 +391,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				234AF22E1DE53A510085D8E4 /* Avatar.m in Sources */,
+				236CEE421DE699F200FE84AF /* FlowerFactory.m in Sources */,
 				234AF21C1DE531E20085D8E4 /* AttackHandler.m in Sources */,
 				234AF2221DE533D50085D8E4 /* MetalArmor.m in Sources */,
+				236CEE481DE6CE0500FE84AF /* FlyweightView.m in Sources */,
 				234AF21F1DE5329F0085D8E4 /* Attack.m in Sources */,
 				234AF2281DE5372A0085D8E4 /* MagicFireAttack.m in Sources */,
 				234AF1EB1DE52FC70085D8E4 /* RootViewController.m in Sources */,
 				234AF22B1DE5377A0085D8E4 /* CrystalShield.m in Sources */,
 				234AF1E81DE52FC70085D8E4 /* AppDelegate.m in Sources */,
+				236CEE3F1DE6996600FE84AF /* FlowerView.m in Sources */,
 				234AF2341DE53C7A0085D8E4 /* LightningAttack.m in Sources */,
+				236CEE451DE6BF5500FE84AF /* ExtrinsicFlowerStateModel.m in Sources */,
 				234AF2381DE53E450085D8E4 /* UIViewExt.m in Sources */,
 				234AF2311DE53AEB0085D8E4 /* RPGViewController.m in Sources */,
+				234AF23C1DE5992E0085D8E4 /* TheFlowerbedsViewController.m in Sources */,
 				234AF2251DE534820085D8E4 /* SwordAttack.m in Sources */,
 				234AF1E51DE52FC70085D8E4 /* main.m in Sources */,
 			);
@@ -603,6 +641,7 @@
 				234AF20F1DE52FC70085D8E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		234AF2101DE52FC70085D8E4 /* Build configuration list for PBXNativeTarget "DesignPatternsCollectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +650,7 @@
 				234AF2121DE52FC70085D8E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		234AF2131DE52FC70085D8E4 /* Build configuration list for PBXNativeTarget "DesignPatternsCollectionsUITests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +659,7 @@
 				234AF2151DE52FC70085D8E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

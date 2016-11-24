@@ -4,7 +4,7 @@
 //
 //  Created by 马浩哲 on 16/11/23.
 //  Copyright © 2016年 junanxin. All rights reserved.
-//游戏任务
+//游戏人物
 
 #import "AttackHandler.h"
 
