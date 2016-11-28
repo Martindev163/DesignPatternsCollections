@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "RPGViewController.h"
 #import "TheFlowerbedsViewController.h"
-
+#import "PatternRootViewController.h"
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableview;
@@ -33,7 +33,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -51,6 +51,10 @@
     {
         cell.textLabel.text = @"享元模式";
     }
+    else if (indexPath.row == 2)
+    {
+        cell.textLabel.text = @"中介者模式";
+    }
     return cell;
 }
 
@@ -65,6 +69,11 @@
     }else if (indexPath.row == 1)
     {
         TheFlowerbedsViewController *vc = [[TheFlowerbedsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 2)
+    {
+        PatternRootViewController *vc = [PatternRootViewController sharedInstance];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
